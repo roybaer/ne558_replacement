@@ -1,0 +1,286 @@
+EESchema Schematic File Version 4
+LIBS:ne558_replacement-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Drop-in replacement for NE558 quad timer IC"
+Date ""
+Rev ""
+Comp "Benedikt Freisen"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Timer:NE556 U1
+U 1 1 5C9D1BE0
+P 5000 2800
+F 0 "U1" H 4800 3150 50  0000 C CNN
+F 1 "NE556" H 5200 3150 50  0000 C CNN
+F 2 "Package_SO:SSOP-14_5.3x6.2mm_P0.65mm" H 5000 2800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne556.pdf" H 5000 2800 50  0001 C CNN
+	1    5000 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Timer:NE556 U2
+U 1 1 5C9D2742
+P 5000 4800
+F 0 "U2" H 4800 5150 50  0000 C CNN
+F 1 "NE556" H 5200 5150 50  0000 C CNN
+F 2 "Package_SO:SSOP-14_5.3x6.2mm_P0.65mm" H 5000 4800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne556.pdf" H 5000 4800 50  0001 C CNN
+	1    5000 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Timer:NE556 U1
+U 2 1 5C9D3A59
+P 7500 2800
+F 0 "U1" H 7300 3150 50  0000 C CNN
+F 1 "NE556" H 7700 3150 50  0000 C CNN
+F 2 "Package_SO:SSOP-14_5.3x6.2mm_P0.65mm" H 7500 2800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne556.pdf" H 7500 2800 50  0001 C CNN
+	2    7500 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Timer:NE556 U2
+U 2 1 5C9D54FE
+P 7500 4800
+F 0 "U2" H 7300 5150 50  0000 C CNN
+F 1 "NE556" H 7700 5150 50  0000 C CNN
+F 2 "Package_SO:SSOP-14_5.3x6.2mm_P0.65mm" H 7500 4800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne556.pdf" H 7500 4800 50  0001 C CNN
+	2    7500 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Counter_Clockwise J1
+U 1 1 5C9D5BB8
+P 3300 3900
+F 0 "J1" H 3350 4417 50  0000 C CNN
+F 1 "DIP-16-Socket" H 3350 4326 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 3300 3900 50  0001 C CNN
+F 3 "~" H 3300 3900 50  0001 C CNN
+	1    3300 3900
+	1    0    0    -1  
+$EndComp
+Text Label 3100 3600 2    50   ~ 0
+OUTPUT_A
+Text Label 3100 3700 2    50   ~ 0
+TIMING_A
+Text Label 3100 3800 2    50   ~ 0
+TRIGGER_A
+Text Label 3100 3900 2    50   ~ 0
+CONTROL_VOLTAGE
+Text Label 3100 4100 2    50   ~ 0
+TRIGGER_B
+Text Label 3100 4200 2    50   ~ 0
+TIMING_B
+Text Label 3100 4300 2    50   ~ 0
+OUTPUT_B
+Text Label 3600 4300 0    50   ~ 0
+OUTPUT_C
+Text Label 3600 4200 0    50   ~ 0
+TIMING_C
+Text Label 3600 4100 0    50   ~ 0
+TRIGGER_C
+Text Label 3600 3900 0    50   ~ 0
+RESET
+Text Label 3600 3800 0    50   ~ 0
+TRIGGER_D
+Text Label 3600 3700 0    50   ~ 0
+TIMING_D
+Text Label 3600 3600 0    50   ~ 0
+OUTPUT_D
+$Comp
+L power:VCC #PWR?
+U 1 1 5C9D786C
+P 2300 4000
+F 0 "#PWR?" H 2300 3850 50  0001 C CNN
+F 1 "VCC" H 2317 4173 50  0000 C CNN
+F 2 "" H 2300 4000 50  0001 C CNN
+F 3 "" H 2300 4000 50  0001 C CNN
+	1    2300 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C9D8394
+P 4100 4000
+F 0 "#PWR?" H 4100 3750 50  0001 C CNN
+F 1 "GND" H 4105 3827 50  0000 C CNN
+F 2 "" H 4100 4000 50  0001 C CNN
+F 3 "" H 4100 4000 50  0001 C CNN
+	1    4100 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4000 3600 4000
+Wire Wire Line
+	2300 4000 3100 4000
+Text Label 4500 2800 2    50   ~ 0
+CONTROL_VOLTAGE
+Text Label 4500 4800 2    50   ~ 0
+CONTROL_VOLTAGE
+Text Label 4500 3000 2    50   ~ 0
+RESET
+Text Label 4500 5000 2    50   ~ 0
+RESET
+Text Label 4500 2600 2    50   ~ 0
+TRIGGER_A
+Text Label 7000 2600 2    50   ~ 0
+TRIGGER_D
+Text Label 4500 4600 2    50   ~ 0
+TRIGGER_B
+Text Label 7000 4600 2    50   ~ 0
+TRIGGER_C
+Text Label 7000 3000 2    50   ~ 0
+RESET
+Text Label 7000 5000 2    50   ~ 0
+RESET
+Text Label 7000 4800 2    50   ~ 0
+CONTROL_VOLTAGE
+Text Label 7000 2800 2    50   ~ 0
+CONTROL_VOLTAGE
+$Comp
+L power:GND #PWR?
+U 1 1 5C9DE811
+P 5000 5200
+F 0 "#PWR?" H 5000 4950 50  0001 C CNN
+F 1 "GND" H 5005 5027 50  0000 C CNN
+F 2 "" H 5000 5200 50  0001 C CNN
+F 3 "" H 5000 5200 50  0001 C CNN
+	1    5000 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C9DF03A
+P 7500 5200
+F 0 "#PWR?" H 7500 4950 50  0001 C CNN
+F 1 "GND" H 7505 5027 50  0000 C CNN
+F 2 "" H 7500 5200 50  0001 C CNN
+F 3 "" H 7500 5200 50  0001 C CNN
+	1    7500 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C9DF697
+P 7500 3200
+F 0 "#PWR?" H 7500 2950 50  0001 C CNN
+F 1 "GND" H 7505 3027 50  0000 C CNN
+F 2 "" H 7500 3200 50  0001 C CNN
+F 3 "" H 7500 3200 50  0001 C CNN
+	1    7500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C9DFB3C
+P 5000 3200
+F 0 "#PWR?" H 5000 2950 50  0001 C CNN
+F 1 "GND" H 5005 3027 50  0000 C CNN
+F 2 "" H 5000 3200 50  0001 C CNN
+F 3 "" H 5000 3200 50  0001 C CNN
+	1    5000 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5C9E0383
+P 5000 2400
+F 0 "#PWR?" H 5000 2250 50  0001 C CNN
+F 1 "VCC" H 5017 2573 50  0000 C CNN
+F 2 "" H 5000 2400 50  0001 C CNN
+F 3 "" H 5000 2400 50  0001 C CNN
+	1    5000 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5C9E16A5
+P 7500 2400
+F 0 "#PWR?" H 7500 2250 50  0001 C CNN
+F 1 "VCC" H 7517 2573 50  0000 C CNN
+F 2 "" H 7500 2400 50  0001 C CNN
+F 3 "" H 7500 2400 50  0001 C CNN
+	1    7500 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5C9E1D5B
+P 7500 4400
+F 0 "#PWR?" H 7500 4250 50  0001 C CNN
+F 1 "VCC" H 7517 4573 50  0000 C CNN
+F 2 "" H 7500 4400 50  0001 C CNN
+F 3 "" H 7500 4400 50  0001 C CNN
+	1    7500 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5C9E2593
+P 5000 4400
+F 0 "#PWR?" H 5000 4250 50  0001 C CNN
+F 1 "VCC" H 5017 4573 50  0000 C CNN
+F 2 "" H 5000 4400 50  0001 C CNN
+F 3 "" H 5000 4400 50  0001 C CNN
+	1    5000 4400
+	1    0    0    -1  
+$EndComp
+Text Label 5500 2600 0    50   ~ 0
+OUTPUT_A
+Text Label 5500 4600 0    50   ~ 0
+OUTPUT_B
+Text Label 8000 2600 0    50   ~ 0
+OUTPUT_D
+Text Label 8000 4600 0    50   ~ 0
+OUTPUT_C
+Text Label 5500 2800 0    50   ~ 0
+TIMING_A
+Text Label 5500 3000 0    50   ~ 0
+TIMING_A
+Text Label 8000 2800 0    50   ~ 0
+TIMING_D
+Text Label 8000 3000 0    50   ~ 0
+TIMING_D
+Text Label 8000 4800 0    50   ~ 0
+TIMING_C
+Text Label 8000 5000 0    50   ~ 0
+TIMING_C
+Text Label 5500 4800 0    50   ~ 0
+TIMING_B
+Text Label 5500 5000 0    50   ~ 0
+TIMING_B
+$Comp
+L Device:R R1
+U 1 1 5C9E4B59
+P 6450 3900
+F 0 "R1" H 6520 3946 50  0000 L CNN
+F 1 "2.5k" H 6520 3855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6380 3900 50  0001 C CNN
+F 3 "~" H 6450 3900 50  0001 C CNN
+	1    6450 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C9E4EF5
+P 6450 4050
+F 0 "#PWR?" H 6450 3800 50  0001 C CNN
+F 1 "GND" H 6455 3877 50  0000 C CNN
+F 2 "" H 6450 4050 50  0001 C CNN
+F 3 "" H 6450 4050 50  0001 C CNN
+	1    6450 4050
+	1    0    0    -1  
+$EndComp
+Text Label 6450 3750 2    50   ~ 0
+CONTROL_VOLTAGE
+$EndSCHEMATC
