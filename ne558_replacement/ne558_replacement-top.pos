@@ -1,0 +1,10 @@
+### Footprint positions - created on Tue 19 Mar 2024 14:09:50 CET ###
+### Printed by KiCad version 7.0.11-7.0.11~ubuntu22.04.1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val            Package                         PosX       PosY       Rot  Side
+J1        DIP-16-Socket  DIP-16_W7.62mm_Socket       140.9700   -88.9000    0.0000  top
+R1        2.5k           R_0603_1608Metric           145.4150   -97.7900    0.0000  top
+U1        NE556          SSOP-14_5.3x6.2mm_P0.65mm   144.7800   -92.5830   90.0000  top
+U2        NE556          SSOP-14_5.3x6.2mm_P0.65mm   144.7800  -102.9970   90.0000  top
+## End
